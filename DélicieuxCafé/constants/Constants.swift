@@ -10,7 +10,7 @@ import Foundation
 struct K {
     struct COLORS {
         static let primaryColor = "primaryColor"
-        
+        static let primaryDarkColor = "primaryDarkColor"
     }
     struct IMAGES {
         static let LOGO_NAME = "coffeemug"
