@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6797761329E983B0007B872C /* De_licieuxCafe_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761229E983B0007B872C /* De_licieuxCafe_App.swift */; };
+		6797761529E983B0007B872C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761429E983B0007B872C /* ContentView.swift */; };
+		6797761729E983B3007B872C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6797761629E983B3007B872C /* Assets.xcassets */; };
+		6797761A29E983B3007B872C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6797761929E983B3007B872C /* Preview Assets.xcassets */; };
+		6797761C29E983B3007B872C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761B29E983B3007B872C /* Persistence.swift */; };
+		6797761F29E983B3007B872C /* De_licieuxCafe_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6797761D29E983B3007B872C /* De_licieuxCafe_.xcdatamodeld */; };
+		6797762A29E983B4007B872C /* De_licieuxCafe_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797762929E983B4007B872C /* De_licieuxCafe_Tests.swift */; };
+		6797763529E983B4007B872C /* De_licieuxCafe_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797763429E983B4007B872C /* De_licieuxCafe_UITests.swift */; };
+		6797764429E9AA3F007B872C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797764329E9AA3F007B872C /* Constants.swift */; };
+		6797764729E9C187007B872C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797764629E9C187007B872C /* RegistrationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6797762629E983B4007B872C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6797760729E983B0007B872C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6797760E29E983B0007B872C;
+			remoteInfo = "DélicieuxCafé";
+		};
+		6797763129E983B4007B872C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6797760729E983B0007B872C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6797760E29E983B0007B872C;
+			remoteInfo = "DélicieuxCafé";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6797760F29E983B0007B872C /* DélicieuxCafé.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DélicieuxCafé.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6797761229E983B0007B872C /* De_licieuxCafe_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_licieuxCafe_App.swift; sourceTree = "<group>"; };
+		6797761429E983B0007B872C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6797761629E983B3007B872C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6797761929E983B3007B872C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6797761B29E983B3007B872C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6797761E29E983B3007B872C /* De_licieuxCafe_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = De_licieuxCafe_.xcdatamodel; sourceTree = "<group>"; };
+		6797762029E983B3007B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6797762529E983B4007B872C /* DélicieuxCaféTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DélicieuxCaféTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6797762929E983B4007B872C /* De_licieuxCafe_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_licieuxCafe_Tests.swift; sourceTree = "<group>"; };
+		6797762B29E983B4007B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6797763029E983B4007B872C /* DélicieuxCaféUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DélicieuxCaféUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6797763429E983B4007B872C /* De_licieuxCafe_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_licieuxCafe_UITests.swift; sourceTree = "<group>"; };
+		6797763629E983B4007B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6797764329E9AA3F007B872C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6797764629E9C187007B872C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6797760C29E983B0007B872C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6797762229E983B4007B872C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6797762D29E983B4007B872C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6797760629E983B0007B872C = {
+			isa = PBXGroup;
+			children = (
+				6797761129E983B0007B872C /* DélicieuxCafé */,
+				6797762829E983B4007B872C /* DélicieuxCaféTests */,
+				6797763329E983B4007B872C /* DélicieuxCaféUITests */,
+				6797761029E983B0007B872C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6797761029E983B0007B872C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6797760F29E983B0007B872C /* DélicieuxCafé.app */,
+				6797762529E983B4007B872C /* DélicieuxCaféTests.xctest */,
+				6797763029E983B4007B872C /* DélicieuxCaféUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6797761129E983B0007B872C /* DélicieuxCafé */ = {
+			isa = PBXGroup;
+			children = (
+				6797764529E9C170007B872C /* Registration */,
+				6797764229E9AA27007B872C /* constants */,
+				6797761229E983B0007B872C /* De_licieuxCafe_App.swift */,
+				6797761429E983B0007B872C /* ContentView.swift */,
+				6797761629E983B3007B872C /* Assets.xcassets */,
+				6797761B29E983B3007B872C /* Persistence.swift */,
+				6797762029E983B3007B872C /* Info.plist */,
+				6797761D29E983B3007B872C /* De_licieuxCafe_.xcdatamodeld */,
+				6797761829E983B3007B872C /* Preview Content */,
+			);
+			path = "DélicieuxCafé";
+			sourceTree = "<group>";
+		};
+		6797761829E983B3007B872C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6797761929E983B3007B872C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6797762829E983B4007B872C /* DélicieuxCaféTests */ = {
+			isa = PBXGroup;
+			children = (
+				6797762929E983B4007B872C /* De_licieuxCafe_Tests.swift */,
+				6797762B29E983B4007B872C /* Info.plist */,
+			);
+			path = "DélicieuxCaféTests";
+			sourceTree = "<group>";
+		};
+		6797763329E983B4007B872C /* DélicieuxCaféUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6797763429E983B4007B872C /* De_licieuxCafe_UITests.swift */,
+				6797763629E983B4007B872C /* Info.plist */,
+			);
+			path = "DélicieuxCaféUITests";
+			sourceTree = "<group>";
+		};
+		6797764229E9AA27007B872C /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				6797764329E9AA3F007B872C /* Constants.swift */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		6797764529E9C170007B872C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				6797764629E9C187007B872C /* RegistrationView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6797760E29E983B0007B872C /* DélicieuxCafé */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6797763929E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCafé" */;
+			buildPhases = (
+				6797760B29E983B0007B872C /* Sources */,
+				6797760C29E983B0007B872C /* Frameworks */,
+				6797760D29E983B0007B872C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DélicieuxCafé";
+			productName = "DélicieuxCafé";
+			productReference = 6797760F29E983B0007B872C /* DélicieuxCafé.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6797762429E983B4007B872C /* DélicieuxCaféTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6797763C29E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCaféTests" */;
+			buildPhases = (
+				6797762129E983B4007B872C /* Sources */,
+				6797762229E983B4007B872C /* Frameworks */,
+				6797762329E983B4007B872C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6797762729E983B4007B872C /* PBXTargetDependency */,
+			);
+			name = "DélicieuxCaféTests";
+			productName = "DélicieuxCaféTests";
+			productReference = 6797762529E983B4007B872C /* DélicieuxCaféTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6797762F29E983B4007B872C /* DélicieuxCaféUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6797763F29E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCaféUITests" */;
+			buildPhases = (
+				6797762C29E983B4007B872C /* Sources */,
+				6797762D29E983B4007B872C /* Frameworks */,
+				6797762E29E983B4007B872C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6797763229E983B4007B872C /* PBXTargetDependency */,
+			);
+			name = "DélicieuxCaféUITests";
+			productName = "DélicieuxCaféUITests";
+			productReference = 6797763029E983B4007B872C /* DélicieuxCaféUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6797760729E983B0007B872C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6797760E29E983B0007B872C = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					6797762429E983B4007B872C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6797760E29E983B0007B872C;
+					};
+					6797762F29E983B4007B872C = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 6797760E29E983B0007B872C;
+					};
+				};
+			};
+			buildConfigurationList = 6797760A29E983B0007B872C /* Build configuration list for PBXProject "DélicieuxCafé" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6797760629E983B0007B872C;
+			productRefGroup = 6797761029E983B0007B872C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6797760E29E983B0007B872C /* DélicieuxCafé */,
+				6797762429E983B4007B872C /* DélicieuxCaféTests */,
+				6797762F29E983B4007B872C /* DélicieuxCaféUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6797760D29E983B0007B872C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6797761A29E983B3007B872C /* Preview Assets.xcassets in Resources */,
+				6797761729E983B3007B872C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6797762329E983B4007B872C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6797762E29E983B4007B872C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6797760B29E983B0007B872C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6797764429E9AA3F007B872C /* Constants.swift in Sources */,
+				6797761C29E983B3007B872C /* Persistence.swift in Sources */,
+				6797761F29E983B3007B872C /* De_licieuxCafe_.xcdatamodeld in Sources */,
+				6797764729E9C187007B872C /* RegistrationView.swift in Sources */,
+				6797761529E983B0007B872C /* ContentView.swift in Sources */,
+				6797761329E983B0007B872C /* De_licieuxCafe_App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6797762129E983B4007B872C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6797762A29E983B4007B872C /* De_licieuxCafe_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6797762C29E983B4007B872C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6797763529E983B4007B872C /* De_licieuxCafe_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6797762729E983B4007B872C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6797760E29E983B0007B872C /* DélicieuxCafé */;
+			targetProxy = 6797762629E983B4007B872C /* PBXContainerItemProxy */;
+		};
+		6797763229E983B4007B872C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6797760E29E983B0007B872C /* DélicieuxCafé */;
+			targetProxy = 6797763129E983B4007B872C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6797763729E983B4007B872C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6797763829E983B4007B872C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6797763A29E983B4007B872C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DélicieuxCafé/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DélicieuxCafé/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mr.De-licieuxCafe-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6797763B29E983B4007B872C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DélicieuxCafé/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DélicieuxCafé/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mr.De-licieuxCafe-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6797763D29E983B4007B872C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = "DélicieuxCaféTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mr.De-licieuxCafe-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DélicieuxCafé.app/DélicieuxCafé";
+			};
+			name = Debug;
+		};
+		6797763E29E983B4007B872C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = "DélicieuxCaféTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mr.De-licieuxCafe-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DélicieuxCafé.app/DélicieuxCafé";
+			};
+			name = Release;
+		};
+		6797764029E983B4007B872C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = "DélicieuxCaféUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mr.De-licieuxCafe-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DélicieuxCafé";
+			};
+			name = Debug;
+		};
+		6797764129E983B4007B872C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GR8F8KEA7;
+				INFOPLIST_FILE = "DélicieuxCaféUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mr.De-licieuxCafe-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DélicieuxCafé";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6797760A29E983B0007B872C /* Build configuration list for PBXProject "DélicieuxCafé" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6797763729E983B4007B872C /* Debug */,
+				6797763829E983B4007B872C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6797763929E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCafé" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6797763A29E983B4007B872C /* Debug */,
+				6797763B29E983B4007B872C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6797763C29E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCaféTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6797763D29E983B4007B872C /* Debug */,
+				6797763E29E983B4007B872C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6797763F29E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCaféUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6797764029E983B4007B872C /* Debug */,
+				6797764129E983B4007B872C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6797761D29E983B3007B872C /* De_licieuxCafe_.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6797761E29E983B3007B872C /* De_licieuxCafe_.xcdatamodel */,
+			);
+			currentVersion = 6797761E29E983B3007B872C /* De_licieuxCafe_.xcdatamodel */;
+			path = De_licieuxCafe_.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6797760729E983B0007B872C /* Project object */;
+}
