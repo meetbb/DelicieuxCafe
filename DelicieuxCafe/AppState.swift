@@ -12,7 +12,8 @@ class AppState: ObservableObject {
         case introduction
         case login
         case registration
+        case homescreen
     }
     
-    @Published var switchView = CurrentView.introduction
+    @Published var switchView = CurrentView.login
 }

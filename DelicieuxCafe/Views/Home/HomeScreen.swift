@@ -13,6 +13,8 @@ struct HomeScreen: View {
     @State var selectedTab = foodOptions[0]
     @Namespace var animation
     @State var show = false
+    @State var selectedItem: FoodItem = foodItems[0]
+    @EnvironmentObject var appState: AppState
     var body: some View {
         ZStack {
             VStack {
@@ -46,19 +48,26 @@ struct HomeScreen: View {
                                 }
                             })
                         }.padding().padding(.top, 5)
-                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 25, content: {
-                            Text("Placeholder")
-                            Text("Placeholder")
-                        })
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 2), spacing: 10, content: {
+                            ForEach(foodItems) { item in
+                                CardView(foodItem: item, animation: animation)
+                                    .onTapGesture {
+                                        withAnimation(.spring()) {
+                                            selectedItem = item
+                                            show.toggle()
+                                        }
+                                    }
+                            }
+                        }).padding(.horizontal, 5)
                     }
                 }
+                Spacer(minLength: 0)
+            }
+            .opacity(show ? 0 : 1)
+            if show {
+                FoodDetailView(selectedItem: $selectedItem, show: $show, animation: animation)
             }
         }
-    }
-}
-
-struct HomeScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeScreen()
+        .background(Color.white.ignoresSafeArea())
     }
 }

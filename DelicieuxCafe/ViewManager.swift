@@ -20,6 +20,8 @@ struct ViewManager: View {
                 LoginScreen().environmentObject(appState).transition(transition)
             case .registration:
                 RegistrationView().environmentObject(appState).transition(transition)
+            case .homescreen:
+                HomeScreen().environmentObject(appState).transition(transition)
             }
         }
     }

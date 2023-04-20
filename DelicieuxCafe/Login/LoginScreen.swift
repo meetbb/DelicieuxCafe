@@ -56,7 +56,9 @@ struct LoginScreen: View {
                         .foregroundColor(Color(K.COLORS.primaryFontColor))
                 })
             }.padding(.top, 20)
-            Button(action: {}, label: {
+            Button(action: {
+                appState.switchView = .homescreen
+            }, label: {
                 Text("Log in")
                     .fontWeight(.bold)
                     .foregroundColor(Color(K.COLORS.primaryFontColor))

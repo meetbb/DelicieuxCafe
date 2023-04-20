@@ -11,6 +11,9 @@
 		6724F24629F11C6500594BC7 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6724F24529F11C6500594BC7 /* TabButton.swift */; };
 		6724F24929F11F3600594BC7 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6724F24829F11F3600594BC7 /* FoodItem.swift */; };
 		6748751B29EABE660085BAB2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748751A29EABE660085BAB2 /* LoginScreen.swift */; };
+		678010DE29F1781F00910933 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678010DD29F1781F00910933 /* CustomShape.swift */; };
+		678010E029F1797200910933 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678010DF29F1797200910933 /* CardView.swift */; };
+		678010E229F189FF00910933 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678010E129F189FF00910933 /* FoodDetailView.swift */; };
 		6797761329E983B0007B872C /* De_licieuxCafe_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761229E983B0007B872C /* De_licieuxCafe_App.swift */; };
 		6797761529E983B0007B872C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761429E983B0007B872C /* ContentView.swift */; };
 		6797761729E983B3007B872C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6797761629E983B3007B872C /* Assets.xcassets */; };
@@ -52,6 +55,9 @@
 		6724F24529F11C6500594BC7 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		6724F24829F11F3600594BC7 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		6748751A29EABE660085BAB2 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		678010DD29F1781F00910933 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
+		678010DF29F1797200910933 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		678010E129F189FF00910933 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
 		6797760F29E983B0007B872C /* DelicieuxCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelicieuxCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6797761229E983B0007B872C /* De_licieuxCafe_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_licieuxCafe_App.swift; sourceTree = "<group>"; };
 		6797761429E983B0007B872C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +114,8 @@
 				6724F24729F11EF300594BC7 /* Data */,
 				6724F24329F119BF00594BC7 /* HomeScreen.swift */,
 				6724F24529F11C6500594BC7 /* TabButton.swift */,
+				678010DF29F1797200910933 /* CardView.swift */,
+				678010E129F189FF00910933 /* FoodDetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -217,6 +225,7 @@
 				6724F24229F119A900594BC7 /* Home */,
 				67E341AC29EC5060002DBEF9 /* controllers */,
 				67E341AA29EC4D7E002DBEF9 /* Main.storyboard */,
+				678010DD29F1781F00910933 /* CustomShape.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,13 +380,16 @@
 			files = (
 				6724F24929F11F3600594BC7 /* FoodItem.swift in Sources */,
 				6797764429E9AA3F007B872C /* Constants.swift in Sources */,
+				678010DE29F1781F00910933 /* CustomShape.swift in Sources */,
 				67E7E90929EAAD13005531DB /* PageView.swift in Sources */,
 				6724F24429F119BF00594BC7 /* HomeScreen.swift in Sources */,
+				678010E229F189FF00910933 /* FoodDetailView.swift in Sources */,
 				6724F24629F11C6500594BC7 /* TabButton.swift in Sources */,
 				6748751B29EABE660085BAB2 /* LoginScreen.swift in Sources */,
 				67E7E90729EAAB2E005531DB /* PageModel.swift in Sources */,
 				67E341B429EC5B79002DBEF9 /* IntroductionView.swift in Sources */,
 				6797761C29E983B3007B872C /* Persistence.swift in Sources */,
+				678010E029F1797200910933 /* CardView.swift in Sources */,
 				67E341AE29EC507A002DBEF9 /* IntroViewController.swift in Sources */,
 				67E341B229EC5A7E002DBEF9 /* ViewManager.swift in Sources */,
 				67E341B029EC5A38002DBEF9 /* AppState.swift in Sources */,
