@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import De_licieuxCafe_
+@testable import DelicieuxCafe
 
 class De_licieuxCafe_Tests: XCTestCase {
 

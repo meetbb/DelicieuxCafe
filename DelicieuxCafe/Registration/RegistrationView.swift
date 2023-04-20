@@ -16,6 +16,7 @@ struct RegistrationView: View {
     @State var isPasswordVisible = false
     @State var isRepeatPasswordVisible = false
     @State private var isActive = false
+    @EnvironmentObject var appState: AppState
     
     var body: some View {
                 ZStack(alignment: .topLeading) {

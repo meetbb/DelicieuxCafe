@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DelicieuxCafe.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
 		<key>DélicieuxCafé.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6797760E29E983B0007B872C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6797762429E983B4007B872C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6797762F29E983B4007B872C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

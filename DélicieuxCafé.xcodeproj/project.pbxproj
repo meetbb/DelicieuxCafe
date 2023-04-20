@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6748751B29EABE660085BAB2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748751A29EABE660085BAB2 /* LoginScreen.swift */; };
 		6797761329E983B0007B872C /* De_licieuxCafe_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761229E983B0007B872C /* De_licieuxCafe_App.swift */; };
 		6797761529E983B0007B872C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761429E983B0007B872C /* ContentView.swift */; };
 		6797761729E983B3007B872C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6797761629E983B3007B872C /* Assets.xcassets */; };
@@ -17,6 +18,13 @@
 		6797763529E983B4007B872C /* De_licieuxCafe_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797763429E983B4007B872C /* De_licieuxCafe_UITests.swift */; };
 		6797764429E9AA3F007B872C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797764329E9AA3F007B872C /* Constants.swift */; };
 		6797764729E9C187007B872C /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797764629E9C187007B872C /* RegistrationView.swift */; };
+		67E341AB29EC4D7E002DBEF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E341AA29EC4D7E002DBEF9 /* Main.storyboard */; };
+		67E341AE29EC507A002DBEF9 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E341AD29EC507A002DBEF9 /* IntroViewController.swift */; };
+		67E341B029EC5A38002DBEF9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E341AF29EC5A38002DBEF9 /* AppState.swift */; };
+		67E341B229EC5A7E002DBEF9 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E341B129EC5A7E002DBEF9 /* ViewManager.swift */; };
+		67E341B429EC5B79002DBEF9 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E341B329EC5B79002DBEF9 /* IntroductionView.swift */; };
+		67E7E90729EAAB2E005531DB /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7E90629EAAB2E005531DB /* PageModel.swift */; };
+		67E7E90929EAAD13005531DB /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7E90829EAAD13005531DB /* PageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6797760F29E983B0007B872C /* DélicieuxCafé.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DélicieuxCafé.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6748751A29EABE660085BAB2 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		6797760F29E983B0007B872C /* DelicieuxCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelicieuxCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6797761229E983B0007B872C /* De_licieuxCafe_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_licieuxCafe_App.swift; sourceTree = "<group>"; };
 		6797761429E983B0007B872C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6797761629E983B3007B872C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,14 +54,21 @@
 		6797761B29E983B3007B872C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		6797761E29E983B3007B872C /* De_licieuxCafe_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = De_licieuxCafe_.xcdatamodel; sourceTree = "<group>"; };
 		6797762029E983B3007B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6797762529E983B4007B872C /* DélicieuxCaféTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DélicieuxCaféTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6797762529E983B4007B872C /* DelicieuxCafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelicieuxCafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6797762929E983B4007B872C /* De_licieuxCafe_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_licieuxCafe_Tests.swift; sourceTree = "<group>"; };
 		6797762B29E983B4007B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6797763029E983B4007B872C /* DélicieuxCaféUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DélicieuxCaféUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6797763029E983B4007B872C /* DelicieuxCafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelicieuxCafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6797763429E983B4007B872C /* De_licieuxCafe_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_licieuxCafe_UITests.swift; sourceTree = "<group>"; };
 		6797763629E983B4007B872C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6797764329E9AA3F007B872C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6797764629E9C187007B872C /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		67E341AA29EC4D7E002DBEF9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		67E341AD29EC507A002DBEF9 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		67E341AF29EC5A38002DBEF9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		67E341B129EC5A7E002DBEF9 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		67E341B329EC5B79002DBEF9 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		67E7E90629EAAB2E005531DB /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		67E7E90829EAAD13005531DB /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +96,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6748751929EABE540085BAB2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6748751A29EABE660085BAB2 /* LoginScreen.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		6797760629E983B0007B872C = {
 			isa = PBXGroup;
 			children = (
-				6797761129E983B0007B872C /* DélicieuxCafé */,
-				6797762829E983B4007B872C /* DélicieuxCaféTests */,
-				6797763329E983B4007B872C /* DélicieuxCaféUITests */,
+				6797761129E983B0007B872C /* DelicieuxCafe */,
+				6797762829E983B4007B872C /* DelicieuxCafeTests */,
+				6797763329E983B4007B872C /* DelicieuxCafeUITests */,
 				6797761029E983B0007B872C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,16 +117,19 @@
 		6797761029E983B0007B872C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6797760F29E983B0007B872C /* DélicieuxCafé.app */,
-				6797762529E983B4007B872C /* DélicieuxCaféTests.xctest */,
-				6797763029E983B4007B872C /* DélicieuxCaféUITests.xctest */,
+				6797760F29E983B0007B872C /* DelicieuxCafe.app */,
+				6797762529E983B4007B872C /* DelicieuxCafeTests.xctest */,
+				6797763029E983B4007B872C /* DelicieuxCafeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6797761129E983B0007B872C /* DélicieuxCafé */ = {
+		6797761129E983B0007B872C /* DelicieuxCafe */ = {
 			isa = PBXGroup;
 			children = (
+				67E341A929EC4D65002DBEF9 /* Views */,
+				6748751929EABE540085BAB2 /* Login */,
+				67E7E90529EAAB17005531DB /* introduction */,
 				6797764529E9C170007B872C /* Registration */,
 				6797764229E9AA27007B872C /* constants */,
 				6797761229E983B0007B872C /* De_licieuxCafe_App.swift */,
@@ -112,8 +139,10 @@
 				6797762029E983B3007B872C /* Info.plist */,
 				6797761D29E983B3007B872C /* De_licieuxCafe_.xcdatamodeld */,
 				6797761829E983B3007B872C /* Preview Content */,
+				67E341AF29EC5A38002DBEF9 /* AppState.swift */,
+				67E341B129EC5A7E002DBEF9 /* ViewManager.swift */,
 			);
-			path = "DélicieuxCafé";
+			path = DelicieuxCafe;
 			sourceTree = "<group>";
 		};
 		6797761829E983B3007B872C /* Preview Content */ = {
@@ -124,22 +153,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6797762829E983B4007B872C /* DélicieuxCaféTests */ = {
+		6797762829E983B4007B872C /* DelicieuxCafeTests */ = {
 			isa = PBXGroup;
 			children = (
 				6797762929E983B4007B872C /* De_licieuxCafe_Tests.swift */,
 				6797762B29E983B4007B872C /* Info.plist */,
 			);
-			path = "DélicieuxCaféTests";
+			path = DelicieuxCafeTests;
 			sourceTree = "<group>";
 		};
-		6797763329E983B4007B872C /* DélicieuxCaféUITests */ = {
+		6797763329E983B4007B872C /* DelicieuxCafeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				6797763429E983B4007B872C /* De_licieuxCafe_UITests.swift */,
 				6797763629E983B4007B872C /* Info.plist */,
 			);
-			path = "DélicieuxCaféUITests";
+			path = DelicieuxCafeUITests;
 			sourceTree = "<group>";
 		};
 		6797764229E9AA27007B872C /* constants */ = {
@@ -158,12 +187,39 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		67E341A929EC4D65002DBEF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67E341AC29EC5060002DBEF9 /* controllers */,
+				67E341AA29EC4D7E002DBEF9 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67E341AC29EC5060002DBEF9 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				67E341AD29EC507A002DBEF9 /* IntroViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		67E7E90529EAAB17005531DB /* introduction */ = {
+			isa = PBXGroup;
+			children = (
+				67E7E90629EAAB2E005531DB /* PageModel.swift */,
+				67E7E90829EAAD13005531DB /* PageView.swift */,
+				67E341B329EC5B79002DBEF9 /* IntroductionView.swift */,
+			);
+			path = introduction;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6797760E29E983B0007B872C /* DélicieuxCafé */ = {
+		6797760E29E983B0007B872C /* DelicieuxCafe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6797763929E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCafé" */;
+			buildConfigurationList = 6797763929E983B4007B872C /* Build configuration list for PBXNativeTarget "DelicieuxCafe" */;
 			buildPhases = (
 				6797760B29E983B0007B872C /* Sources */,
 				6797760C29E983B0007B872C /* Frameworks */,
@@ -173,14 +229,14 @@
 			);
 			dependencies = (
 			);
-			name = "DélicieuxCafé";
+			name = DelicieuxCafe;
 			productName = "DélicieuxCafé";
-			productReference = 6797760F29E983B0007B872C /* DélicieuxCafé.app */;
+			productReference = 6797760F29E983B0007B872C /* DelicieuxCafe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6797762429E983B4007B872C /* DélicieuxCaféTests */ = {
+		6797762429E983B4007B872C /* DelicieuxCafeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6797763C29E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCaféTests" */;
+			buildConfigurationList = 6797763C29E983B4007B872C /* Build configuration list for PBXNativeTarget "DelicieuxCafeTests" */;
 			buildPhases = (
 				6797762129E983B4007B872C /* Sources */,
 				6797762229E983B4007B872C /* Frameworks */,
@@ -191,14 +247,14 @@
 			dependencies = (
 				6797762729E983B4007B872C /* PBXTargetDependency */,
 			);
-			name = "DélicieuxCaféTests";
+			name = DelicieuxCafeTests;
 			productName = "DélicieuxCaféTests";
-			productReference = 6797762529E983B4007B872C /* DélicieuxCaféTests.xctest */;
+			productReference = 6797762529E983B4007B872C /* DelicieuxCafeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6797762F29E983B4007B872C /* DélicieuxCaféUITests */ = {
+		6797762F29E983B4007B872C /* DelicieuxCafeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6797763F29E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCaféUITests" */;
+			buildConfigurationList = 6797763F29E983B4007B872C /* Build configuration list for PBXNativeTarget "DelicieuxCafeUITests" */;
 			buildPhases = (
 				6797762C29E983B4007B872C /* Sources */,
 				6797762D29E983B4007B872C /* Frameworks */,
@@ -209,9 +265,9 @@
 			dependencies = (
 				6797763229E983B4007B872C /* PBXTargetDependency */,
 			);
-			name = "DélicieuxCaféUITests";
+			name = DelicieuxCafeUITests;
 			productName = "DélicieuxCaféUITests";
-			productReference = 6797763029E983B4007B872C /* DélicieuxCaféUITests.xctest */;
+			productReference = 6797763029E983B4007B872C /* DelicieuxCafeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -249,9 +305,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6797760E29E983B0007B872C /* DélicieuxCafé */,
-				6797762429E983B4007B872C /* DélicieuxCaféTests */,
-				6797762F29E983B4007B872C /* DélicieuxCaféUITests */,
+				6797760E29E983B0007B872C /* DelicieuxCafe */,
+				6797762429E983B4007B872C /* DelicieuxCafeTests */,
+				6797762F29E983B4007B872C /* DelicieuxCafeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E341AB29EC4D7E002DBEF9 /* Main.storyboard in Resources */,
 				6797761A29E983B3007B872C /* Preview Assets.xcassets in Resources */,
 				6797761729E983B3007B872C /* Assets.xcassets in Resources */,
 			);
@@ -288,7 +345,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6797764429E9AA3F007B872C /* Constants.swift in Sources */,
+				67E7E90929EAAD13005531DB /* PageView.swift in Sources */,
+				6748751B29EABE660085BAB2 /* LoginScreen.swift in Sources */,
+				67E7E90729EAAB2E005531DB /* PageModel.swift in Sources */,
+				67E341B429EC5B79002DBEF9 /* IntroductionView.swift in Sources */,
 				6797761C29E983B3007B872C /* Persistence.swift in Sources */,
+				67E341AE29EC507A002DBEF9 /* IntroViewController.swift in Sources */,
+				67E341B229EC5A7E002DBEF9 /* ViewManager.swift in Sources */,
+				67E341B029EC5A38002DBEF9 /* AppState.swift in Sources */,
 				6797761F29E983B3007B872C /* De_licieuxCafe_.xcdatamodeld in Sources */,
 				6797764729E9C187007B872C /* RegistrationView.swift in Sources */,
 				6797761529E983B0007B872C /* ContentView.swift in Sources */,
@@ -317,12 +381,12 @@
 /* Begin PBXTargetDependency section */
 		6797762729E983B4007B872C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6797760E29E983B0007B872C /* DélicieuxCafé */;
+			target = 6797760E29E983B0007B872C /* DelicieuxCafe */;
 			targetProxy = 6797762629E983B4007B872C /* PBXContainerItemProxy */;
 		};
 		6797763229E983B4007B872C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6797760E29E983B0007B872C /* DélicieuxCafé */;
+			target = 6797760E29E983B0007B872C /* DelicieuxCafe */;
 			targetProxy = 6797763129E983B4007B872C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -450,16 +514,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"DélicieuxCafé/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DelicieuxCafe/Preview Content\"";
 				DEVELOPMENT_TEAM = 2GR8F8KEA7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "DélicieuxCafé/Info.plist";
+				INFOPLIST_FILE = DelicieuxCafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mr.De-licieuxCafe-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.DelicieuxCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,16 +536,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"DélicieuxCafé/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DelicieuxCafe/Preview Content\"";
 				DEVELOPMENT_TEAM = 2GR8F8KEA7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "DélicieuxCafé/Info.plist";
+				INFOPLIST_FILE = DelicieuxCafe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mr.De-licieuxCafe-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mr.DelicieuxCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -584,7 +648,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6797763929E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCafé" */ = {
+		6797763929E983B4007B872C /* Build configuration list for PBXNativeTarget "DelicieuxCafe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6797763A29E983B4007B872C /* Debug */,
@@ -593,7 +657,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6797763C29E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCaféTests" */ = {
+		6797763C29E983B4007B872C /* Build configuration list for PBXNativeTarget "DelicieuxCafeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6797763D29E983B4007B872C /* Debug */,
@@ -602,7 +666,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6797763F29E983B4007B872C /* Build configuration list for PBXNativeTarget "DélicieuxCaféUITests" */ = {
+		6797763F29E983B4007B872C /* Build configuration list for PBXNativeTarget "DelicieuxCafeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6797764029E983B4007B872C /* Debug */,

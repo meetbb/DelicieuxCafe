@@ -1,30 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Page View Controller-->
+        <scene sceneID="oFA-6K-Bzh">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="zXH-Ai-Cfj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8uY-6r-yCj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="147"/>
+        </scene>
+        <!--Intro View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="Y6W-OH-hqX" customClass="IntroViewController" customModule="DelicieuxCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Px9-b9-3mD"/>
+                        <viewControllerLayoutGuide type="bottom" id="tBl-Pm-Rsm"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrm-QQ-4Ji">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="primaryColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee_shop" translatesAutoresizingMaskIntoConstraints="NO" id="BPW-r2-U0e">
+                                <rect key="frame" x="20" y="144" width="374" height="289"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BPW-r2-U0e" secondAttribute="height" multiplier="22:17" id="7q5-W2-ZUT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Delicieux Cafe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOL-S0-LY7">
+                                <rect key="frame" x="20" y="478" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" name="primaryFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The best place to work/hangout, eat, date and much more." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRN-Ak-axb">
+                                <rect key="frame" x="20" y="554" width="374" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" name="primaryFontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="primaryColor"/>
+                        <constraints>
+                            <constraint firstItem="sOL-S0-LY7" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="A9g-D8-FiR"/>
+                            <constraint firstItem="JRN-Ak-axb" firstAttribute="top" secondItem="sOL-S0-LY7" secondAttribute="bottom" constant="40" id="FsS-eq-eCs"/>
+                            <constraint firstAttribute="bottom" secondItem="Hrm-QQ-4Ji" secondAttribute="bottom" id="KPd-BJ-P8c"/>
+                            <constraint firstAttribute="trailing" secondItem="sOL-S0-LY7" secondAttribute="trailing" constant="20" id="LhP-IB-ngL"/>
+                            <constraint firstItem="Hrm-QQ-4Ji" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="SOu-gc-kO2"/>
+                            <constraint firstItem="BPW-r2-U0e" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="Wow-yw-W6E"/>
+                            <constraint firstItem="Hrm-QQ-4Ji" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="bqG-QD-Uko"/>
+                            <constraint firstAttribute="trailing" secondItem="BPW-r2-U0e" secondAttribute="trailing" constant="20" id="bv0-EV-zjs"/>
+                            <constraint firstItem="sOL-S0-LY7" firstAttribute="top" secondItem="BPW-r2-U0e" secondAttribute="bottom" constant="45" id="fAg-6s-DH1"/>
+                            <constraint firstItem="BPW-r2-U0e" firstAttribute="top" secondItem="Px9-b9-3mD" secondAttribute="bottom" constant="100" id="feA-LY-oE1"/>
+                            <constraint firstAttribute="trailing" secondItem="Hrm-QQ-4Ji" secondAttribute="trailing" id="hrE-XR-y4f"/>
+                            <constraint firstItem="JRN-Ak-axb" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="qZw-HW-I2n"/>
+                            <constraint firstAttribute="trailing" secondItem="JRN-Ak-axb" secondAttribute="trailing" constant="20" id="zwI-Vb-1xs"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5Ii-Lc-fXK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="799" y="147"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="primaryColor"/>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="coffee_shop" width="1200" height="1200"/>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.81599998474121094" blue="0.0" alpha="0.69700002670288086" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryFontColor">
+            <color red="0.86699998378753662" green="0.63899999856948853" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

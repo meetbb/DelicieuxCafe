@@ -13,7 +13,7 @@ struct De_licieuxCafe_App: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewManager()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

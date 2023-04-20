@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class AppState: ObservableObject {
+    enum CurrentView: Int {
+        case introduction
+        case login
+        case registration
+    }
+    
+    @Published var switchView = CurrentView.introduction
+}

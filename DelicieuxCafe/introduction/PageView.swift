@@ -11,19 +11,29 @@ struct PageView: View {
     var currentPage: Page
     
     var body: some View {
-        ZStack {
             VStack {
                 Image(currentPage.imageUrl)
                     .resizable()
                     .scaledToFit()
                     .padding()
                 Text(currentPage.name)
-                    .font(.title)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(K.COLORS.primaryFontColor))
+                    .frame(width: UIScreen.main.bounds.size.width - 50, alignment: .leading)
+                    .padding(.bottom, 10)
                 Text(currentPage.description)
                     .font(.subheadline)
-                    .frame(width: 300)
-            }
-        }
-        .background(Color(K.COLORS.primaryColor))
+                    .fontWeight(.bold)
+                    .frame(width: UIScreen.main.bounds.size.width - 50, alignment: .leading)
+                    .foregroundColor(Color(K.COLORS.primaryFontColor))
+                    .padding(.bottom, 10)
+            }        
+    }
+}
+
+struct PageView_Previews: PreviewProvider {
+    static var previews: some View {
+        PageView(currentPage: Page.samplePages[2])
     }
 }

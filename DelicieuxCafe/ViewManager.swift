@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ViewManager: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @StateObject var appState = AppState()
+    let transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
 
-struct ViewManager_Previews: PreviewProvider {
-    static var previews: some View {
-        ViewManager()
+    var body: some View {
+        Group {
+            switch (appState.switchView) {
+            case .introduction:
+                IntroductionView().environmentObject(appState).transition(transition)
+            case .login:
+                LoginScreen().environmentObject(appState).transition(transition)
+            case .registration:
+                RegistrationView().environmentObject(appState).transition(transition)
+            }
+        }
     }
 }

@@ -11,6 +11,7 @@ struct K {
     struct COLORS {
         static let primaryColor = "primaryColor"
         static let primaryDarkColor = "primaryDarkColor"
+        static let primaryFontColor = "primaryFontColor"
     }
     struct IMAGES {
         static let LOGO_NAME = "coffeemug"
