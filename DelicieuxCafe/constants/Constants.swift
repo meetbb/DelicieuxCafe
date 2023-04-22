@@ -20,9 +20,14 @@ struct K {
         static let backButton = "chevron.left"
         
     }
+    struct KEYS {
+        static let isLaunchedBefore = "isLaunchedBefore"
+    }
     struct LABELS {
         static let LOGIN_LABEL = "Log in to your account"
         static let emailLabel = "Email"
-        static let passwordLabel = "Password"        
+        static let passwordLabel = "Password"
+        static let signUp = "Sign up"
+        static let next = "Next"
     }
 }

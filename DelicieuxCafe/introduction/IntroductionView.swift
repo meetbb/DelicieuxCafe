@@ -13,51 +13,60 @@ struct IntroductionView: View {
     private let pages: [Page] = Page.samplePages
     private let dotAppearance = UIPageControl.appearance()
     @EnvironmentObject var appState: AppState
+    @EnvironmentObject var pageActionReceiver: PageActionReceiver
+    @EnvironmentObject var pageActionInvoker: PageActionInvoker
     
     var body: some View {
-        TabView(selection: $pageIndex) {
-            ForEach(pages) { page in
-                VStack {
-                    Spacer()
-                    PageView(currentPage: page)
-                    Spacer()
-                    if page == pages.last {
-                        Button(action: {
-                            appState.switchView = .login
-                        }, label: {
-                            Text("Sign up")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color(K.COLORS.primaryFontColor))
-                        })
-                    } else {
-                        Button(action: {
-                            incrementPage()
-                        }, label: {
-                            Text("Next")
-                                .fontWeight(.bold)
-                                .foregroundColor(Color(K.COLORS.primaryFontColor))
-                        })
+        ZStack {
+            TabView(selection: $pageIndex) {
+                ForEach(pages) { page in
+                    VStack {
+                        Spacer()
+                        PageView(currentPage: page)
+                        Spacer()
                     }
-                    Spacer()
+                    .tag(page.tag)
                 }
-                .tag(page.tag)
+            }.animation(.easeInOut, value: pageIndex)
+            .tabViewStyle(PageTabViewStyle())
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .interactive))
+            .onAppear {
+                dotAppearance.currentPageIndicatorTintColor = .white
+                dotAppearance.pageIndicatorTintColor = .gray
             }
-        }.animation(.easeInOut, value: pageIndex)
-        .background(Color(K.COLORS.primaryColor))
+            VStack(alignment: .trailing) {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        if isLastIndex() {
+                            appState.switchView = .login
+                            UserDefaults.standard.set(true, forKey: K.KEYS.isLaunchedBefore)
+                        } else {
+                            incrementPage()
+                        }
+                    }, label: {
+                        HStack {
+                            Text(isLastIndex() ? K.LABELS.signUp : K.LABELS.next)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(K.COLORS.primaryFontColor))
+                        }
+                    }).frame(height: 30)
+                    .padding(.bottom, 15)
+                    .padding(.trailing, 20)
+                }
+            }
+        }.background(Color(K.COLORS.primaryColor))
         .ignoresSafeArea()
-        .tabViewStyle(PageTabViewStyle())
-        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .interactive))
-        .onAppear {
-            dotAppearance.currentPageIndicatorTintColor = .white
-            dotAppearance.pageIndicatorTintColor = .gray
-    }
     }
     
-    func goToZero() {
-        pageIndex = 0
+    func isLastIndex() -> Bool {
+        return pageIndex == pages.count - 1
     }
     
     func incrementPage() {
-        pageIndex += 1
+        let command = MoveToNextPageCommand(pageActionReceiver: pageActionReceiver, index: pageIndex)
+        pageActionInvoker.nextPage(using: command)
+        pageIndex = command.nextPageIndex
     }
 }

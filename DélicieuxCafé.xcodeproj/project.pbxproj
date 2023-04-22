@@ -11,9 +11,14 @@
 		6724F24629F11C6500594BC7 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6724F24529F11C6500594BC7 /* TabButton.swift */; };
 		6724F24929F11F3600594BC7 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6724F24829F11F3600594BC7 /* FoodItem.swift */; };
 		6748751B29EABE660085BAB2 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748751A29EABE660085BAB2 /* LoginScreen.swift */; };
+		677C1EBA29F3AE3500059DF9 /* PageActionReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677C1EB929F3AE3500059DF9 /* PageActionReceiver.swift */; };
+		677C1EBC29F3AEB500059DF9 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677C1EBB29F3AEB500059DF9 /* Command.swift */; };
+		677C1EBE29F3AF1500059DF9 /* MoveToNextPageCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677C1EBD29F3AF1500059DF9 /* MoveToNextPageCommand.swift */; };
+		677C1EC029F3AFD100059DF9 /* PageActionInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677C1EBF29F3AFD100059DF9 /* PageActionInvoker.swift */; };
 		678010DE29F1781F00910933 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678010DD29F1781F00910933 /* CustomShape.swift */; };
 		678010E029F1797200910933 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678010DF29F1797200910933 /* CardView.swift */; };
 		678010E229F189FF00910933 /* FoodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678010E129F189FF00910933 /* FoodDetailView.swift */; };
+		678C18A429F30AD8004BB7EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 678C18A329F30AD8004BB7EE /* GoogleService-Info.plist */; };
 		6797761329E983B0007B872C /* De_licieuxCafe_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761229E983B0007B872C /* De_licieuxCafe_App.swift */; };
 		6797761529E983B0007B872C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797761429E983B0007B872C /* ContentView.swift */; };
 		6797761729E983B3007B872C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6797761629E983B3007B872C /* Assets.xcassets */; };
@@ -55,9 +60,14 @@
 		6724F24529F11C6500594BC7 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 		6724F24829F11F3600594BC7 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		6748751A29EABE660085BAB2 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		677C1EB929F3AE3500059DF9 /* PageActionReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageActionReceiver.swift; sourceTree = "<group>"; };
+		677C1EBB29F3AEB500059DF9 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		677C1EBD29F3AF1500059DF9 /* MoveToNextPageCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveToNextPageCommand.swift; sourceTree = "<group>"; };
+		677C1EBF29F3AFD100059DF9 /* PageActionInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageActionInvoker.swift; sourceTree = "<group>"; };
 		678010DD29F1781F00910933 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
 		678010DF29F1797200910933 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		678010E129F189FF00910933 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		678C18A329F30AD8004BB7EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6797760F29E983B0007B872C /* DelicieuxCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelicieuxCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6797761229E983B0007B872C /* De_licieuxCafe_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = De_licieuxCafe_App.swift; sourceTree = "<group>"; };
 		6797761429E983B0007B872C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +146,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		677C1EC129F3BAB800059DF9 /* commandsandreceivers */ = {
+			isa = PBXGroup;
+			children = (
+				677C1EB929F3AE3500059DF9 /* PageActionReceiver.swift */,
+				677C1EBB29F3AEB500059DF9 /* Command.swift */,
+				677C1EBD29F3AF1500059DF9 /* MoveToNextPageCommand.swift */,
+				677C1EBF29F3AFD100059DF9 /* PageActionInvoker.swift */,
+			);
+			path = commandsandreceivers;
+			sourceTree = "<group>";
+		};
+		677C1EC229F3DC3E00059DF9 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
 		6797760629E983B0007B872C = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +187,8 @@
 		6797761129E983B0007B872C /* DelicieuxCafe */ = {
 			isa = PBXGroup;
 			children = (
+				677C1EC229F3DC3E00059DF9 /* utilities */,
+				678C18A329F30AD8004BB7EE /* GoogleService-Info.plist */,
 				67E341A929EC4D65002DBEF9 /* Views */,
 				6748751929EABE540085BAB2 /* Login */,
 				67E7E90529EAAB17005531DB /* introduction */,
@@ -241,6 +271,7 @@
 		67E7E90529EAAB17005531DB /* introduction */ = {
 			isa = PBXGroup;
 			children = (
+				677C1EC129F3BAB800059DF9 /* commandsandreceivers */,
 				67E7E90629EAAB2E005531DB /* PageModel.swift */,
 				67E7E90829EAAD13005531DB /* PageView.swift */,
 				67E341B329EC5B79002DBEF9 /* IntroductionView.swift */,
@@ -352,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67E341AB29EC4D7E002DBEF9 /* Main.storyboard in Resources */,
+				678C18A429F30AD8004BB7EE /* GoogleService-Info.plist in Resources */,
 				6797761A29E983B3007B872C /* Preview Assets.xcassets in Resources */,
 				6797761729E983B3007B872C /* Assets.xcassets in Resources */,
 			);
@@ -387,14 +419,18 @@
 				6724F24629F11C6500594BC7 /* TabButton.swift in Sources */,
 				6748751B29EABE660085BAB2 /* LoginScreen.swift in Sources */,
 				67E7E90729EAAB2E005531DB /* PageModel.swift in Sources */,
+				677C1EBE29F3AF1500059DF9 /* MoveToNextPageCommand.swift in Sources */,
 				67E341B429EC5B79002DBEF9 /* IntroductionView.swift in Sources */,
 				6797761C29E983B3007B872C /* Persistence.swift in Sources */,
+				677C1EBC29F3AEB500059DF9 /* Command.swift in Sources */,
 				678010E029F1797200910933 /* CardView.swift in Sources */,
 				67E341AE29EC507A002DBEF9 /* IntroViewController.swift in Sources */,
 				67E341B229EC5A7E002DBEF9 /* ViewManager.swift in Sources */,
 				67E341B029EC5A38002DBEF9 /* AppState.swift in Sources */,
+				677C1EBA29F3AE3500059DF9 /* PageActionReceiver.swift in Sources */,
 				6797761F29E983B3007B872C /* De_licieuxCafe_.xcdatamodeld in Sources */,
 				6797764729E9C187007B872C /* RegistrationView.swift in Sources */,
+				677C1EC029F3AFD100059DF9 /* PageActionInvoker.swift in Sources */,
 				6797761529E983B0007B872C /* ContentView.swift in Sources */,
 				6797761329E983B0007B872C /* De_licieuxCafe_App.swift in Sources */,
 			);

@@ -16,7 +16,7 @@ struct FoodDetailView: View {
     var body: some View {
         VStack {
             HStack(spacing: 25) {
-                ActionButton(imageName: "chevron.left", clickAction: {
+                ActionButton(imageName: K.IMAGES.backButton, clickAction: {
                     withAnimation(.spring()) {
                         show.toggle()
                     }

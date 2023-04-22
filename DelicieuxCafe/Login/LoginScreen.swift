@@ -13,6 +13,7 @@ struct LoginScreen: View {
     @State var email = ""
     @State var passwd = ""
     @State var isPasswordVisible = false
+    @State var showRegistration = false
     @EnvironmentObject var appState: AppState
     
     var body: some View {
@@ -75,12 +76,17 @@ struct LoginScreen: View {
                 .ignoresSafeArea(.container, edges: [.top, .horizontal])
             }
             Button(action: {
-                appState.switchView = .registration
+//                appState.switchView = .registration
+                showRegistration.toggle()
             }, label: {
                 Text("Register")
                     .fontWeight(.bold)
                     .foregroundColor(Color(K.COLORS.primaryFontColor))
             }).padding()
+        }.opacity(showRegistration ? 0 : 1)
+        if showRegistration {
+            RegistrationView(showRegistration: $showRegistration)
+//            FoodDetailView(selectedItem: $selectedItem, show: $show, animation: animation)
         }
     }
 }

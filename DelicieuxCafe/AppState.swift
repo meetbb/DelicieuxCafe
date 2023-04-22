@@ -15,5 +15,14 @@ class AppState: ObservableObject {
         case homescreen
     }
     
-    @Published var switchView = CurrentView.login
+    init() {
+        isLaunchedBefore
+    }
+    
+    @Published var switchView = CurrentView.introduction
+    
+    var isLaunchedBefore: Void {
+        let isLaunchedBefore = UserDefaults.standard.bool(forKey: K.KEYS.isLaunchedBefore)
+        self.switchView = isLaunchedBefore ? CurrentView.login : CurrentView.introduction
+    }
 }
